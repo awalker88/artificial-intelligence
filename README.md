@@ -11,13 +11,14 @@ This project requires Python 3 and the library NumPy.
 
 The main function is ```search(board, numRows, numCols)```. There are 3 types of jewels: Diamonds, Rubies, and Emeralds. Diamonds will cycle to Rubies, Rubies to Emeralds, and Emeralds to Diamonds.
 
-Parameters of ```search```:  
+Parameters of ```search()```:  
 **1. board** - board state that you would like to solve, entered as one string. (ex. 'EEEDDDRRR')
 
 **2. numRows** - the number of columns your board has
 
 **3. numCols** - the number of columns your board has
 
+To solve a board, first convert your board to a single string with the first letters of each jewel. Then run the ```search()``` function with the board state and it's dimensions as its parameters. Note that the length of your string needs to be equal to ```numCols``` times ```numRows```.
 Examples: 
 * ```search('EEEDDDRRR', 3, 3)```
 * ```search('DDREEREE', 4, 2)```
