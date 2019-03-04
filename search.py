@@ -131,5 +131,5 @@ def depth_limited_search(node, depth):
                 return solution
         return None
 
-
-search('dedeeeded', 3,3)
+if __name__ == "__main__":
+    search('dedeeeded', 3,3)
